@@ -1,13 +1,14 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 23
-    buildToolsVersion "23.0.0"
-
+    signingConfigs {
+    }
+    compileSdkVersion 24
+    buildToolsVersion '24.0.2'
     defaultConfig {
         applicationId "com.charile.xiyi"
         minSdkVersion 17
-        targetSdkVersion 23
+        targetSdkVersion 24
         versionCode 1
         versionName "1.0"
     }
@@ -16,11 +17,17 @@ android {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
+        debug {
+            renderscriptDebuggable true
+            minifyEnabled true
+        }
+    }
+    productFlavors {
     }
 }
 
 dependencies {
-    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile fileTree(include: ['*.jar'], dir: 'libs')
     testCompile 'junit:junit:4.12'
     // xUtils3
     compile 'org.xutils:xutils:3.3.36'
@@ -31,15 +38,14 @@ dependencies {
     //bmob-sms ：Bmob单独为短信服务提供的包
     compile 'cn.bmob.android:bmob-sms:1.0.1'
     //rxjava
-    compile 'io.reactivex:rxjava:1.0.14'
-    compile 'io.reactivex:rxandroid:1.0.1'
     //Retrofit
-    compile 'com.squareup.retrofit:retrofit:2.0.0-beta2'
-    compile 'com.squareup.retrofit:converter-gson:2.0.0-beta2'
-    compile 'com.squareup.retrofit:adapter-rxjava:2.0.0-beta2'
     //Glide
     compile 'com.github.bumptech.glide:glide:3.7.0'
     //Zhang HongYang 万能adapter
     compile 'com.zhy:base-adapter:3.0.3'
-
+    compile 'com.squareup.retrofit2:retrofit:2.1.0'
+    compile 'com.squareup.retrofit2:converter-gson:2.1.0'
+    compile 'com.squareup.retrofit2:adapter-rxjava:2.1.0'
+    compile 'io.reactivex:rxjava:1.2.1'
+    compile 'io.reactivex:rxandroid:1.2.1'
 }
