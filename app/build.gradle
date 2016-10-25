@@ -3,24 +3,18 @@ apply plugin: 'com.android.application'
 android {
     signingConfigs {
     }
-    compileSdkVersion 24
-    buildToolsVersion '24.0.2'
+    compileSdkVersion 23
+    buildToolsVersion '23.0.2'
     defaultConfig {
         applicationId "com.charile.xiyi"
-        minSdkVersion 17
-        targetSdkVersion 24
+        minSdkVersion 19
+        targetSdkVersion
         versionCode 1
         versionName "1.0"
+        multiDexEnabled true
     }
     buildTypes {
-        release {
-            minifyEnabled false
-            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
-        }
-        debug {
-            renderscriptDebuggable true
-            minifyEnabled true
-        }
+
     }
     productFlavors {
     }
@@ -37,15 +31,17 @@ dependencies {
     //compile 'cn.bmob.android:bmob-sdk:3.5.0'
     //bmob-sms ：Bmob单独为短信服务提供的包
     compile 'cn.bmob.android:bmob-sms:1.0.1'
-    //rxjava
     //Retrofit
     //Glide
     compile 'com.github.bumptech.glide:glide:3.7.0'
     //Zhang HongYang 万能adapter
     compile 'com.zhy:base-adapter:3.0.3'
+
     compile 'com.squareup.retrofit2:retrofit:2.1.0'
     compile 'com.squareup.retrofit2:converter-gson:2.1.0'
-    compile 'com.squareup.retrofit2:adapter-rxjava:2.1.0'
-    compile 'io.reactivex:rxjava:1.2.1'
-    compile 'io.reactivex:rxandroid:1.2.1'
+    compile 'com.jakewharton.retrofit:retrofit2-rxjava2-adapter:1.0.0-RC3'
+    //rxjava
+
+    compile 'io.reactivex.rxjava2:rxjava:2.0.0-RC5'
+    compile 'io.reactivex.rxjava2:rxandroid:2.0.0-RC1'
 }
