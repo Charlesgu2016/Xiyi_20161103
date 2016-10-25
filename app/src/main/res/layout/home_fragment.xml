@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="90px"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/location_select"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:drawablePadding="10px"
+            android:drawableRight="@mipmap/nav_select"
+            android:gravity="center_vertical"
+            android:scaleX="0.6"
+            android:scaleY="0.6"
+            android:src="@mipmap/title_arrow_back"
+            android:text="城市"
+            android:textColor="@color/base_blue"
+            android:textSize="52px" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="90px"
+            android:layout_alignBottom="@id/location_select"
+            android:layout_alignTop="@id/location_select"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="XXXX洗衣"
+            android:textColor="@color/font_middle_gray"
+            android:textSize="36px" />
+    </RelativeLayout>
+    <!--广告轮播-->
+    <android.support.v4.view.ViewPager
+        android:id="@+id/home_fragment_banners"
+        android:layout_width="match_parent"
+        android:layout_height="260px">
+
+    </android.support.v4.view.ViewPager>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="160px"
+        android:layout_marginTop="20px"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/piece"
+            android:layout_width="280px"
+            android:layout_height="160px"
+            android:layout_marginRight="10px"
+            android:scaleType="fitCenter"
+            android:src="@mipmap/home_single_wash" />
+
+        <ImageView
+            android:id="@+id/basket"
+            android:layout_width="280px"
+            android:layout_height="160px"
+            android:layout_marginLeft="10px"
+            android:scaleType="fitCenter"
+            android:src="@mipmap/home_basket_wash" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/home"
+        android:layout_width="580px"
+        android:layout_height="130px"
+        android:layout_marginTop="20px"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/home_home_wash" />
+
+    <ImageView
+        android:id="@+id/other"
+        android:layout_width="580px"
+        android:layout_height="130px"
+        android:layout_marginTop="20px"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/home_other_wash" />
+
+    <ImageView
+        android:id="@+id/service_info"
+        android:layout_width="580px"
+        android:layout_height="130px"
+        android:layout_marginTop="20px"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/home_service_info" />
+
+</LinearLayout>

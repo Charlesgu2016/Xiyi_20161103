@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/basket_title"
+        android:layout_width="match_parent"
+        android:layout_height="92px"
+        android:background="@color/white"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:id="@+id/my_address_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingLeft="30px"
+            android:src="@mipmap/title_arrow_back" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="我的地址"
+            android:textColor="@color/font_middle_gray"
+            android:textSize="36px" />
+
+        <TextView
+            android:id="@+id/my_address_update"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="20px"
+            android:gravity="center"
+            android:text="修改"
+            android:textColor="@color/base_blue"
+            android:textSize="32px" />
+
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:layout_width="580px"
+        android:layout_height="350px"
+        android:layout_marginTop="16px"
+        android:background="@color/white"
+        android:layout_gravity="center"
+        >
+        <TextView
+            android:layout_marginLeft="50px"
+            android:layout_marginTop="30px"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="李女士"
+            android:drawableLeft="@mipmap/basket_user_icon"
+            android:textSize="32px"
+            android:drawablePadding="10px"
+            />
+
+        <ImageView
+            android:layout_marginLeft="50px"
+            android:layout_marginTop="100px"
+            android:layout_width="580px"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/dottedline"/>
+
+        <TextView
+            android:layout_marginLeft="50px"
+            android:layout_marginTop="130px"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="18888888888"
+            android:drawableLeft="@mipmap/my_phone_blue_icon"
+            android:textSize="32px"
+            android:drawablePadding="10px"
+            />
+
+        <ImageView
+            android:layout_marginLeft="50px"
+            android:layout_marginTop="200px"
+            android:layout_width="580px"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/dottedline"/>
+        <TextView
+            android:layout_marginLeft="50px"
+            android:layout_marginTop="230px"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="成都市青羊区家园南街1号 上城成都花园 6栋二单元1204号"
+            android:drawableLeft="@mipmap/basket_location_icon"
+            android:textSize="32px"
+            android:drawablePadding="10px"
+            />
+
+    </RelativeLayout>
+
+</LinearLayout>

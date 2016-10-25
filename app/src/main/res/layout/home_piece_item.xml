@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/home_piece_item"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:descendantFocusability="blocksDescendants"
+    >
+
+    <ImageView
+        android:id="@+id/home_piece_item_pic"
+        android:layout_width="126px"
+        android:layout_height="140px"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40px"
+        android:src="@mipmap/piece_tshirt" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="46px"
+        android:layout_marginRight="46px"
+        android:layout_marginTop="204px"
+        android:background="@color/font_gray" />
+
+    <TextView
+        android:id="@+id/home_piece_item_typename"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="224px"
+        android:text="T恤" />
+
+    <TextView
+        android:id="@+id/home_piece_item_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="270px"
+        android:text="￥8"
+        android:textColor="@color/base_orange"
+        android:textSize="36px" />
+
+
+</RelativeLayout>

@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="90px"
+        android:layout_gravity="right"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/basket_order_intotal"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="36px"
+            android:gravity="center"
+            android:text="¥48"
+            android:textColor="@color/base_orange"
+            android:textSize="32px" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="32px"
+            android:layout_toLeftOf="@id/basket_order_intotal"
+            android:gravity="center"
+            android:text="费用总计:"
+            android:textSize="32px" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="280px">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20px"
+            android:src="@mipmap/basket_coupon30" />
+
+        <TextView
+            android:id="@+id/basket_order_afterdeduct"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="30px"
+            android:layout_marginTop="200px"
+            android:gravity="center"
+            android:text="¥18"
+            android:textColor="@color/base_orange"
+            android:textSize="42px" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10px"
+            android:layout_marginTop="200px"
+            android:layout_toLeftOf="@id/basket_order_afterdeduct"
+            android:gravity="center"
+            android:text="合计:"
+            android:textSize="42px" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="90px"
+        android:layout_gravity="right"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="32px"
+            android:layout_marginRight="32px"
+            android:gravity="center"
+            android:text="洗衣券"
+            android:textSize="32px" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="26px"
+            android:drawablePadding="20px"
+            android:drawableRight="@mipmap/arrow_enter"
+            android:gravity="center"
+            android:text="点击使用"
+            android:textSize="28px" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="90px"
+        android:layout_gravity="right"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="32px"
+            android:layout_marginRight="32px"
+            android:gravity="center"
+            android:text="用户信息"
+            android:textSize="32px" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="26px"
+            android:drawablePadding="20px"
+            android:drawableRight="@mipmap/arrow_enter"
+            android:gravity="center"
+            android:text="填写"
+            android:textSize="28px" />
+    </RelativeLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30px"
+        android:layout_marginRight="30px"
+        android:layout_marginTop="58px"
+        android:background="@color/base_blue"
+        android:text="立即支付"
+        android:textColor="@color/white"
+        android:textSize="36px" />
+
+</LinearLayout>

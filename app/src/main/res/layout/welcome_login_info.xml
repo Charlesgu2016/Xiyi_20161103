@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/login_title"
+        android:layout_width="match_parent"
+        android:layout_height="92px"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/login_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingLeft="30px"
+            android:src="@mipmap/title_arrow_back" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="用户协议"
+            android:textColor="@color/font_middle_gray"
+            android:textSize="36px" />
+
+    </RelativeLayout>
+
+    <WebView
+        android:id="@+id/welcome_login_info_content"
+        android:layout_gravity="center"
+        android:layout_width="580px"
+        android:layout_height="800px"
+        android:layout_marginTop="40px">
+
+
+    </WebView>
+    <Button
+        android:id="@+id/login_btn"
+        android:layout_width="580px"
+        android:layout_height="90px"
+        android:layout_gravity="center"
+        android:layout_marginTop="40px"
+        android:background="@color/font_gray"
+        android:text="同意用户协议"
+        android:textColor="@color/white"
+        android:textSize="36px" />
+
+</LinearLayout>

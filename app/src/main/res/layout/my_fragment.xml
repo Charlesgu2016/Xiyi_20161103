@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="380px"
+        android:background="@color/base_blue">
+
+        <TextView
+            android:id="@+id/my_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="70px"
+            android:layout_marginTop="90px"
+            android:drawableLeft="@mipmap/my_name_icon"
+            android:drawablePadding="10px"
+            android:text="李小姐"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/my_userphone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="70px"
+            android:layout_marginTop="170px"
+            android:drawableLeft="@mipmap/my_phone_icon"
+            android:drawablePadding="10px"
+            android:text="18888888888"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginLeft="70px"
+            android:layout_marginRight="70px"
+            android:layout_marginTop="280px"
+            android:background="@color/white" />
+
+        <TextView
+            android:id="@+id/my_recommendnum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="70px"
+            android:layout_marginTop="310px"
+            android:text="推荐码:S19J6Q"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+        <Button
+            android:layout_width="1px"
+            android:layout_height="60px"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="310px"
+            android:background="@color/white" />
+
+        <TextView
+            android:id="@+id/my_coupon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="360px"
+            android:layout_marginTop="310px"
+            android:text="余2张洗衣券"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/my_menu"
+        android:layout_width="match_parent"
+        android:layout_height="310px"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/my_order"
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawablePadding="30px"
+            android:drawableTop="@mipmap/my_order"
+            android:gravity="center"
+            android:text="我的订单"
+            android:textSize="30px"/>
+
+        <TextView
+            android:id="@+id/my_credit"
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawablePadding="30px"
+            android:drawableTop="@mipmap/my_credit"
+            android:gravity="center"
+            android:text="洗衣币"
+            android:textSize="30px"
+            />
+
+        <TextView
+            android:id="@+id/my_address"
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawablePadding="30px"
+            android:drawableTop="@mipmap/my_location"
+            android:gravity="center"
+            android:text="我的地址"
+            android:textSize="30px"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="310px"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/my_share"
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawablePadding="30px"
+            android:drawableTop="@mipmap/my_sharecode"
+            android:gravity="center"
+            android:text="分享推荐码"
+            android:textSize="30px"
+            />
+
+        <TextView
+            android:id="@+id/my_valirecocode"
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawablePadding="30px"
+            android:drawableTop="@mipmap/my_validatecode"
+            android:gravity="center"
+            android:text="验证推荐码"
+            android:textSize="30px"
+            />
+
+        <TextView
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center" />
+    </LinearLayout>
+
+</LinearLayout>
