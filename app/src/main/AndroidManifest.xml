@@ -17,22 +17,24 @@
         <meta-data android:name="design_height" android:value="1136">
         </meta-data>
 
-        <activity android:name=".welcome.MainActivity">
+        <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".welcome.WelcomeLoginInfoActivity" />
-        <activity android:name=".welcome.SlidePageActivity" />
-        <activity android:name=".welcome.LoginActivity" />
+        <!--欢迎界面-->
+        <activity android:name=".welcome.WelLoginInfoActivity" />
+        <activity android:name=".welcome.WelSlidePageActivity" />
+        <activity android:name=".welcome.WelLoginActivity" />
+        <activity android:name=".welcome.WelRegisterActivity" />
 
-
-        <activity android:name=".home.HomeActivity"
+        <!--主页面-->
+        <activity android:name=".HomeActivity"
             android:launchMode="singleTask">
         </activity>
         <activity android:name=".home.HomePieceActivity" />
-
+        <!--我的-->
         <activity android:name=".my.MyOrderActivity" />
         <activity android:name=".my.MyCreditActivity" />
         <activity android:name=".my.MyCreditPwdMgtActivity" />
@@ -43,13 +45,12 @@
         <activity android:name=".my.MyShareActivity" />
         <activity android:name=".my.MyCouponActivity" />
         <activity android:name=".my.MyRecoCodeActivity" />
-
+        <!--更多-->
         <activity android:name=".more.MoreFeedbackActivity" />
 
     </application>
 
     <!--permissions-->
-
     <!--允许联网 -->
     <uses-permission android:name="android.permission.INTERNET" />
     <!--获取GSM（2g）、WCDMA（联通3g）等网络状态的信息  -->

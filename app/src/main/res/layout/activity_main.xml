@@ -4,7 +4,7 @@
     android:id="@+id/welcome"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.charile.xiyi.welcome.MainActivity"
+    tools:context="com.charile.xiyi.MainActivity"
     android:fitsSystemWindows="true"
     android:clipToPadding="true"
     >
